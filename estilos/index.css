@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+:root {
+  --corDeFundo: linear-gradient(
+    292.2deg, #3355ff 33.7%, #0088ff 93.7%);
+  --fonte: "Lato", Helvetica, sans-serif;
+  --fonteLeve: 100;
+  --fontePesada: 700; 
+  --fontePequena: 1rem;
+  --fonteMedia: 1.3rem;
+  --fonteGrande: 2.5rem;
+  --texto: #ffffff
+}
+
+* {
+  color: var(--texto);
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+body {
+  background-image: var(--corDeFundo);
+  font-family: var(--fonte);
+  margin: 0 auto;
+  height: 100vh;
+  max-width: 750px;
+}
+
+h1 {
+  font-size: var(--fonteGrande);
+  font-weight: var(--fonteLeve);
+}
+
+h2 {
+  font-size: var(--fontePequena);
+  font-weight: var(--fonteLeve);
+}
+
+img {
+  max-width: 100%;
+}
+
+.cabecalho {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.cabecalho h1 {
+  margin-top: 40px;
+}
+
+.navegacao a {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: block;
+  margin: 20px 20px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+a:focus {
+  border-radius: 5px;
+  outline: #3398db solid 2px;
+}
+
+.rodape {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.rodape a {
+  padding: 5px;
+}
+
+.rodape:hover {
+  text-decoration: underline;
+}
